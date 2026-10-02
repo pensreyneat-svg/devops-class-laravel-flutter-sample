@@ -1,20 +1,20 @@
 # DevOps Conception Class
-- Student: [Name]
+- Student: [Pen Sreyneat]
 
 ## Lesson 2: My CI/CD pipeline
-- Project: [Flutter app + Laravel API]
-- Trigger: [Push to practice branch]
-- Target: [Staging + test device]
+- Project: Personal Finance Management System[Flutter app + Laravel API]
+- Trigger: push to feature/register [Push to practice branch]
+- Target: Laravel staging server + Android testing device.[Staging + test device]
 
 ### Pipeline design
 Code -> Test -> Build -> Release -> Deploy
-1. Code: [action] | [person] | [output] | [auto/manual]
-2. Test: [action] | [person] | [output] | [auto/manual]
-3. Build: [action] | [person] | [output] | [auto/manual]
-4. Release: [action] | [person] | [output] | [auto/manual]
-5. Deploy: [action] | [person] | [output] | [auto/manual]
+1. Code: [action]=commit API(api/register) | [person]=PEN SREYNET | [output]=Commit code | [manual]
+2. Test: [action]=Check API(api/register) | [person]=KUN TOUCH | [output]=Test result | [auto]
+3. Build: [action]=Package API+APK | [person]=Artifact (MOT PHUM) | [output]=Package APK | [auto]
+4. Release: [action]=Approve version v1.0.0 | [person]=release lead (SOR VEASNA) | [output]=Approve version v1.0.0 | [manual]    
+5. Deploy: [action]=stage APK | [person]=Devops | [output]=Running App | [manual]
 ### Controls
-On test/build failure: ... | Release approval by: ...
-After deployment, check: ... | If it fails: ...
-Feedback for the next change: ...
+On test/build failure: KUN TOUCH/MOT PHUM | Release approval by: release lead (SOR VEASNA)
+After deployment, check: Devops | If it fails: Devops
+Feedback for the next change: Devops
 Optional drawing: ![My pipeline](pipeline.png)
